@@ -2,7 +2,7 @@
 
 We understand TypeScript as a new form of JavaScript code that has been ``polished.`` It has brought **Well-structured** to the quality of the code and made it easier to maintain. Let's take a quick look at how the code quality and maintainability have improved.
 
-**<u>Improving code quality and maintainability</u>**
+### Improving code quality and maintainability
 The main **advantage** of using TypeScript is the ability to improve **code quality and maintainability.**
 
 TypeScript allows developers to catch potential errors and bugs early in the development process. This early detection saves time, which further improves the quality of the code.
@@ -29,7 +29,7 @@ console.log(call(123)); 🎯//Compile-time Error</code> </pre>
 Typescript will report an error at ``Compile-time`` that **Input must be a string**
 
 
-**<u>Early bug detection and improved performance</u>**
+### Early bug detection and improved performance
 TypeScript static typing not only improved the quality of the code, but also played an important role in quickly identifying bugs.
 
 **Example:**
@@ -67,9 +67,9 @@ Typescript will show us errors at compile time. It means that we don't need to r
 
 In TypeScript, both ``Interfaces`` and ``Types`` are used to define the structure of objects. Interfaces are **extensible,** but Types are allowing **unions and intersections.**
 
-**<u>The Nature of ``Interfaces`` and ``Types`` in TypeScript</u>**
+### The Nature of ``Interfaces`` and ``Types`` in TypeScript
 
-**Interfaces**
+#### Interfaces
 The only major difference is that ``Interfaces`` can be **extended.** When we use an Interface, we don't really know what it contains, because it can be changed or extended at any time, which is the **nature of Interfaces.** Let's break this into code and show how Interfaces can be extended.
 
 <pre><code>Interfaces Can Be Extended
@@ -88,7 +88,7 @@ const employee: Employee = {
 };</code> </pre>
 ``Employee`` extends ``Person``, it inherits the ``id`` property.
 
-**Types**
+#### Types
 **Types cannot be extended**, but Types can be combined into a new Type using **Unions**. The main difference here is that it does not change the original Type.
 <pre><code>Types Cannot Be Extended
 
@@ -131,7 +131,7 @@ const groupParticipant2: groupCommunity = {
 Union combines alternative ``types``
 
 
-**<u>The Declaration merging of ``Interfaces`` and ``Types`` in TypeScript</u>**
+### The Declaration merging of ``Interfaces`` and ``Types`` in TypeScript
 
 ``Interfaces`` support **declaration merging,** so we can define **multiple Interfaces with the same name**. Typescript will automatically merge them into a single interface. On the other hand, Types **don't support** declaration merging. This can be helpful for us when we want to add additional functionality. 
 <pre><code>interface Name {
@@ -146,4 +146,4 @@ const name: Name = {
 };</code> </pre>
 
 
-``Types in TypeScript are more flexible, it can define intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object.``
+##### Types in TypeScript are more flexible, it can define intersection, union, tuple, or different types of data, while interfaces are used to describe the shape of an object.
