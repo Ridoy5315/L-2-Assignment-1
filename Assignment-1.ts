@@ -1,5 +1,4 @@
 {
-  // problem - 1
   function formatString(input: string, toUpper?: boolean): string {
     if (toUpper === false) {
       return input.toLowerCase();
@@ -8,9 +7,9 @@
     }
   }
 
-//   console.log(formatString("Hello", false));
 
-  //problem - 2
+
+
   function filterByRating(items: { title: string; rating: number }[]): { title: string; rating:number }[] {
      const afterFilters = items.filter(item => item.rating >= 4)
      return afterFilters;
@@ -24,17 +23,15 @@
      { title: "Book C", rating: 2.8 }
    ]);
 
-//    console.log(books);
 
-   //problem - 3
+
 
    function concatenateArrays<T>(...arrays: T[][]): T[]{
      return arrays.flat();
    }
 
-//    console.log(concatenateArrays([1, 2], [3, 4], [5]))
 
-//problem-4
+
 
 class Vehicle {
   private _make : string;
@@ -63,11 +60,8 @@ class Car extends Vehicle {
   }
 }
 
-// const myCar = new Car("Toyota", 2020, "Corolla");
-// myCar.getInfo()
-// myCar.getModel()
 
-//problem - 5
+
 function processValue(value: string | number): number {
   if(typeof value === 'string'){
     return value.length;
@@ -76,9 +70,7 @@ function processValue(value: string | number): number {
   }
 }
 
-// console.log(processValue(10))
 
-// problem - 6
 
 interface Product {
   name: string;
@@ -96,16 +88,9 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
     return null;
   }
 }
-// const products = [
-//   { name: "Pen", price: 10 },
-//   { name: "Notebook", price: 25 },
-//   { name: "Bag", price: 50 },
-//   { name: "Phone", price: 70 },
-//   { name: "Book", price: 35 }
-// ];
-// console.log(getMostExpensiveProduct(products));  
 
-// problem -7 
+
+
 enum Day {
   Monday,
   Tuesday,
@@ -124,9 +109,7 @@ function getDayType(day: Day): string {
   }
 }
 
-// console.log(getDayType(Day.Sunday))
 
-//problem - 8 
 
 async function squareAsync(n: number): Promise<number> {
 
@@ -139,7 +122,6 @@ async function squareAsync(n: number): Promise<number> {
   })
 }
 
-// squareAsync(-8).then(console.log).catch(console.error)
 
 
 }
