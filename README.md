@@ -1,4 +1,4 @@
-## Improving code quality and maintainability
+# Improving code quality and maintainability
 
 We understand TypeScript as a new form of JavaScript code that has been ``polished.`` It has brought **Well-structured** to the quality of the code and made it easier to maintain. Let's take a quick look at how the code quality and maintainability have improved.
 
@@ -63,7 +63,7 @@ Typescript will show us errors at compile time. It means that we don't need to r
 
 ---
 
-## Key Differences Between Interfaces and Types in TypeScript
+# Key Differences Between Interfaces and Types in TypeScript
 
 In TypeScript, both ``Interfaces`` and ``Types`` are used to define the structure of objects. Interfaces are **extensible,** but Types are allowing **unions and intersections.**
 
